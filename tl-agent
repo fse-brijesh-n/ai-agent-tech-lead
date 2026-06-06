@@ -1,0 +1,771 @@
+# MASTER PROMPT - AI TECH LEAD AGENT PLATFORM
+
+You are a Principal Software Architect, Enterprise Architect, AI Agent Architect, Staff Engineer, Product Architect, DevOps Architect, Security Architect, and Technical Lead.
+
+Your task is to design and build a complete enterprise-grade AI-powered Engineering Workforce Operating System named:
+
+# AI TECH LEAD AGENT PLATFORM
+
+The platform acts as an autonomous Resource Manager (RM), Tech Lead (TL), Engineering Manager, Assignment Manager, Learning Coach, and Employee Growth Assistant.
+
+The system must automatically:
+
+* Manage employees
+* Manage skills
+* Manage tasks/stories
+* Assign stories using AI
+* Review completed work using AI
+* Track employee growth
+* Generate learning paths
+* Recommend next stories
+* Integrate with GitHub
+* Send notifications
+* Send emails
+* Generate analytics
+* Provide RM dashboard
+* Provide TL dashboard
+* Provide Employee dashboard
+
+The platform must demonstrate real Agentic AI behavior.
+
+---
+
+# APPROVED TECHNOLOGY STACK (STRICT)
+
+Backend:
+
+* Java 21
+* Spring Boot 3+
+* Spring Security
+* Spring Data JPA
+* Spring AI
+* Spring Cloud
+
+Frontend:
+
+* ReactJS
+* Lit Elements Web Components
+
+Database:
+
+* PostgreSQL
+
+Messaging:
+
+* Apache Kafka
+
+AI:
+
+* OpenAI
+* RAG
+* MCP
+
+Email:
+
+* Java Mail Sender
+
+Authentication:
+
+* JWT
+
+API:
+
+* REST APIs
+
+Documentation:
+
+* OpenAPI / Swagger
+
+Containerization:
+
+* Docker
+* Docker Compose
+
+Build Tool:
+
+* Maven
+
+STRICTLY DO NOT USE:
+
+* NodeJS Backend
+* Python Backend
+* MongoDB
+* Redis
+* ElasticSearch
+* Any technology outside the approved stack
+
+---
+
+# MOST IMPORTANT RULE
+
+ALL CONFIGURATION MUST COME FROM .ENV FILES.
+
+NO HARDCODED VALUES.
+
+NO HARDCODED PASSWORDS.
+
+NO HARDCODED API KEYS.
+
+NO HARDCODED URLS.
+
+NO HARDCODED DATABASE SETTINGS.
+
+EVERYTHING MUST BE CONFIGURABLE THROUGH .ENV.
+
+The application must work immediately after the developer fills the required .env values.
+
+Every service must contain:
+
+.env.example
+
+and must load configuration from environment variables.
+
+---
+
+# ARCHITECTURE
+
+Create only 4 major projects.
+
+Each project must be independent.
+
+Each project must have:
+
+* Separate Maven project
+* Separate Dockerfile
+* Separate application.yml
+* Separate README
+* Separate .env.example
+* Independent startup
+* Independent deployment
+
+Project Structure:
+
+ai-tech-lead-platform/
+
+├── workforce-core-service/
+├── ai-agent-service/
+├── notification-service/
+├── frontend/
+├── docker/
+├── docs/
+├── deployment/
+
+---
+
+# SERVICE 1
+
+WORKFORCE CORE SERVICE
+
+Responsibilities:
+
+* Authentication
+* Authorization
+* Employee Management
+* Team Management
+* Skill Management
+* Task Management
+* Assignment Management
+* Learning Path Storage
+* Dashboard APIs
+
+Database:
+
+PostgreSQL
+
+Modules:
+
+* auth
+* employee
+* team
+* skills
+* tasks
+* assignments
+* learning-path
+* dashboard
+
+---
+
+# EMPLOYEE FEATURES
+
+Employee Profile
+
+* Create Employee
+* Update Employee
+* Delete Employee
+* Search Employee
+* View Employee
+
+Employee Levels
+
+* Intern
+* Fresher
+* Junior Developer
+* Software Engineer
+* Senior Engineer
+* Lead Engineer
+
+Employee Fields
+
+* Name
+* Email
+* Experience
+* Designation
+* Skills
+* Team
+* Manager
+* Tech Lead
+* Availability
+
+---
+
+# SKILL FEATURES
+
+Track Skills
+
+* Java
+* Spring Boot
+* Kafka
+* PostgreSQL
+* Docker
+* Microservices
+* React
+* Cloud
+
+Track
+
+* Skill Score
+* Confidence Score
+* Skill Growth
+* Skill History
+
+Generate
+
+* Skill Matrix
+* Skill Gap Analysis
+
+---
+
+# TASK FEATURES
+
+Story Management
+
+* Create Story
+* Update Story
+* Delete Story
+* Assign Story
+* Reassign Story
+* Close Story
+
+Task Status
+
+* Draft
+* Created
+* Assigned
+* In Progress
+* Blocked
+* Review
+* Completed
+* Rejected
+* Closed
+
+Task Fields
+
+* Story Points
+* Priority
+* Complexity
+* Technology
+* Due Date
+* Acceptance Criteria
+
+---
+
+# SERVICE 2
+
+AI AGENT SERVICE
+
+This is the brain of the platform.
+
+Responsibilities:
+
+* AI Assignment
+* AI Review
+* AI Learning
+* AI Recommendations
+* RM Copilot
+* TL Copilot
+
+Use:
+
+* OpenAI
+* RAG
+* MCP
+
+---
+
+# ASSIGNMENT AGENT
+
+Automatically select:
+
+* Best Employee
+* Best Story
+
+Decision Factors:
+
+* Skill Match
+* Experience
+* Availability
+* Workload
+* Previous Performance
+* Learning Goal
+
+The agent must explain WHY the employee was selected.
+
+Example:
+
+Assigned to Rahul because:
+
+* 85% Java Match
+* 90% Availability
+* Recently completed REST APIs
+* Learning path aligns with Spring Boot
+
+---
+
+# REVIEW AGENT
+
+Review:
+
+* GitHub Pull Requests
+* GitHub Commits
+* GitHub Branches
+
+Generate:
+
+* Review Score
+* Strengths
+* Weaknesses
+* Recommendations
+
+Review Categories:
+
+* Code Quality
+* Security
+* Architecture
+* Naming Standards
+* Test Coverage
+* Performance
+
+---
+
+# LEARNING AGENT
+
+Generate personalized roadmap.
+
+Example:
+
+Java Basics
+↓
+Collections
+↓
+Spring Boot
+↓
+REST APIs
+↓
+Security
+↓
+Kafka
+↓
+Microservices
+↓
+Cloud
+
+Automatically update roadmap after every completed task.
+
+---
+
+# RECOMMENDATION AGENT
+
+Recommend:
+
+* Next Story
+* Next Skill
+* Next Learning Objective
+* Promotion Readiness
+
+---
+
+# RM COPILOT
+
+Provide:
+
+* Team Health
+* Utilization
+* Skill Gaps
+* Resource Risks
+* Hiring Suggestions
+* Assignment Suggestions
+
+---
+
+# TL COPILOT
+
+Provide:
+
+* Pending Reviews
+* Team Risks
+* Story Progress
+* Delivery Risks
+* Assignment Suggestions
+
+---
+
+# GITHUB INTEGRATION
+
+Integrate with GitHub.
+
+Features:
+
+* Repository Integration
+* Organization Integration
+* Commit Tracking
+* Branch Tracking
+* Pull Request Tracking
+* Review Tracking
+* Merge Tracking
+
+Implement Webhooks:
+
+* Push Event
+* Pull Request Event
+* Review Event
+* Merge Event
+
+Automatically trigger AI Review when PR is created or updated.
+
+GitHub configuration MUST come from .env.
+
+Required variables:
+
+GITHUB_TOKEN
+
+GITHUB_WEBHOOK_SECRET
+
+GITHUB_ORGANIZATION
+
+GITHUB_BASE_URL
+
+---
+
+# RAG REQUIREMENTS
+
+Implement Enterprise RAG.
+
+Knowledge Sources:
+
+* Coding Standards
+* SOP Documents
+* Architecture Guidelines
+* Review Guidelines
+* Learning Materials
+
+Capabilities:
+
+* Embeddings
+* Semantic Search
+* Context Retrieval
+* Agent Knowledge Access
+
+OpenAI Embedding Model must come from .env.
+
+---
+
+# MCP REQUIREMENTS
+
+Implement MCP Tool Layer.
+
+Tools:
+
+* Employee Tool
+* Task Tool
+* Assignment Tool
+* Skill Tool
+* Review Tool
+* Notification Tool
+* Analytics Tool
+* GitHub Tool
+
+Agents must use MCP-compatible tools internally.
+
+---
+
+# SERVICE 3
+
+NOTIFICATION SERVICE
+
+Responsibilities:
+
+* In-App Notifications
+* Bell Notifications
+* Email Notifications
+
+Database:
+
+PostgreSQL
+
+---
+
+# NOTIFICATION TYPES
+
+Employee
+
+* Task Assigned
+* Task Reassigned
+* Review Generated
+* Skill Updated
+* Learning Recommendation
+
+Tech Lead
+
+* Review Pending
+* Story Completed
+* Team Risk Alert
+
+Resource Manager
+
+* Assignment Completed
+* Resource Risk
+* Skill Gap Alert
+
+---
+
+# FEATURES
+
+* Notification Center
+* Notification History
+* Read
+* Unread
+* Mark All Read
+* Real-Time Updates
+
+---
+
+# EMAIL FEATURES
+
+Use Java Mail Sender.
+
+Send:
+
+* Assignment Email
+* Reminder Email
+* Review Email
+* Learning Recommendation Email
+
+Mail configuration MUST come from .env.
+
+Required variables:
+
+MAIL_HOST
+
+MAIL_PORT
+
+MAIL_USERNAME
+
+MAIL_PASSWORD
+
+MAIL_FROM
+
+---
+
+# SERVICE 4
+
+FRONTEND
+
+Technology:
+
+* ReactJS
+* Lit Elements
+
+---
+
+# RESOURCE MANAGER DASHBOARD
+
+Features:
+
+* Team Overview
+* Team Utilization
+* Skill Matrix
+* Assignment Overview
+* AI Insights
+* Notification Bell
+* Analytics
+
+---
+
+# TECH LEAD DASHBOARD
+
+Features:
+
+* Team Stories
+* Pending Reviews
+* Team Skills
+* Assignment Suggestions
+* AI Recommendations
+* Notification Bell
+
+---
+
+# EMPLOYEE DASHBOARD
+
+Features:
+
+* My Tasks
+* My Reviews
+* My Learning Path
+* My Skills
+* My Growth
+* My Performance
+* Notification Bell
+
+---
+
+# KAFKA EVENTS
+
+Implement:
+
+* EmployeeCreated
+* EmployeeUpdated
+* TaskCreated
+* TaskAssigned
+* TaskCompleted
+* ReviewStarted
+* ReviewCompleted
+* SkillUpdated
+* LearningUpdated
+* NotificationCreated
+* GithubPRCreated
+* GithubPRReviewed
+* GithubPRMerged
+
+---
+
+# SECURITY
+
+Implement:
+
+JWT Authentication
+
+RBAC
+
+Roles:
+
+* ADMIN
+* RESOURCE_MANAGER
+* TECH_LEAD
+* EMPLOYEE
+
+Features:
+
+* Access Control
+* Secure APIs
+* Audit Logging
+* Token Refresh
+
+---
+
+# REQUIRED .ENV VARIABLES
+
+Every service must contain:
+
+.env.example
+
+Include variables like:
+
+OPENAI_API_KEY=
+
+OPENAI_MODEL=
+
+OPENAI_EMBEDDING_MODEL=
+
+POSTGRES_HOST=
+
+POSTGRES_PORT=
+
+POSTGRES_DB=
+
+POSTGRES_USER=
+
+POSTGRES_PASSWORD=
+
+KAFKA_BOOTSTRAP_SERVERS=
+
+KAFKA_GROUP_ID=
+
+JWT_SECRET=
+
+MAIL_HOST=
+
+MAIL_PORT=
+
+MAIL_USERNAME=
+
+MAIL_PASSWORD=
+
+MAIL_FROM=
+
+GITHUB_TOKEN=
+
+GITHUB_WEBHOOK_SECRET=
+
+GITHUB_ORGANIZATION=
+
+GITHUB_BASE_URL=
+
+APP_BASE_URL=
+
+FRONTEND_URL=
+
+NO CONFIGURATION MAY BE HARDCODED.
+
+---
+
+# CODE GENERATION REQUIREMENTS
+
+Generate:
+
+* Complete Folder Structure
+* Backend Services
+* React Frontend
+* Lit Components
+* PostgreSQL Schemas
+* Entities
+* DTOs
+* Controllers
+* Services
+* Repositories
+* Kafka Producers
+* Kafka Consumers
+* OpenAI Integration
+* RAG Implementation
+* MCP Implementation
+* GitHub Integration
+* Notification Engine
+* Email Engine
+* Dockerfiles
+* Docker Compose
+* Swagger Documentation
+* README Files
+* Deployment Guide
+* API Documentation
+* Sample Data
+
+Use:
+
+* Clean Architecture
+* SOLID Principles
+* Event Driven Architecture
+* Production Ready Design
+* Enterprise Standards
+* Scalable Design
+* Maintainable Code
+
+The final output must be a fully working, deployable enterprise application where a developer only needs to populate .env files and start the services.
